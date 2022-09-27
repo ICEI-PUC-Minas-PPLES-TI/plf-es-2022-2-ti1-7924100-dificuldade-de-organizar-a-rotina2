@@ -87,21 +87,11 @@ Desta forma, estabeleceu-se como público-alvo desta solução os homens e as mu
 
 ...... Definimos os problemas e as questões mais importantes do projeto por meio de entrevistas realizadas por formulários on-line com pessoas de diferentes perfis. Pensando nisso, estabelecemos as conclusões desse processo por meio de personas e histórias de usuários.......
 
-> Apresente uma visão geral do que será abordado nesta parte do
-> documento, enumerando as técnicas e/ou ferramentas utilizadas para
-> realizar a especificações do projeto
 
 ## Personas e Mapas de Empatia
 
-...... As personas abordadas no projeto estão listadas abaixo: ......
+As personas abordadas no projeto estão listadas abaixo:
 
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que
-> você deve ser enumerar e descrever precisamente e de forma
-> personalizada todos os principais envolvidos com a solução almeja.
->
-> Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina
-> e/ou nos seguintes links:
->
 ![Exemplo de Persona](imaages/../images/persona1.jpeg)
 ![Exemplo de Persona](imaages/../images/persona2.jpeg)
 ![Exemplo de Persona](imaages/../images/persona3.jpeg)
@@ -118,18 +108,6 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Gustavo Pereira      |Conseguir relacionar todas as tarefas do meu dia em uma plataforma| Para ter uma melhor organização sobre minhas tarefas |
 | Luiza Campos         | Uma plataforma para organizar as atividades passadas aos alunos  |Para controlar melhor se os alunos estão ou não fazendo as atividades  |
 
-
-> Apresente aqui as histórias de usuário que são relevantes para o
-> projeto de sua solução. As Histórias de Usuário consistem em uma
-> ferramenta poderosa para a compreensão e elicitação dos requisitos
-> funcionais e não funcionais da sua aplicação. Se possível, agrupe as
-> histórias de usuário por contexto, para facilitar consultas
-> recorrentes à essa parte do documento.
->
-> **Links Úteis**:
->
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
 
 ## Requisitos
 
@@ -156,26 +134,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RNF-003 | O site deve ser publicado em um ambiente acessível publicamente na Internet (GitHub)    | ALTA     |
 | RNF-004 | O site deve apresentar uma interface simples e intuitiiva            | ALTA     |
 
-> Com base nas Histórias de Usuário, enumere os requisitos da sua
-> solução. Classifique esses requisitos em dois grupos:
->
-> - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na
->   plataforma (ex: cadastro de usuário).
->
-> - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade,
->   desempenho, confiabilidade, segurança ou outro (ex: suporte a
->   dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma
-> característica alvo da sua solução. Além disso, certifique-se de que
-> todos os aspectos capturados nas Histórias de Usuário foram cobertos.
->
-> **Links Úteis**:
->
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Restrições
 
@@ -186,13 +144,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 | 01  | O projeto deverá ser entregue até o final do semestre |
 | 02  | Poderemos utilizar apenar o Frontend no projeto       |
 
-> Enumere as restrições à sua solução. Lembre-se de que as restrições
-> geralmente limitam a solução candidata.
->
-> **Links Úteis**:
->
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 # Projeto de Interface
 
