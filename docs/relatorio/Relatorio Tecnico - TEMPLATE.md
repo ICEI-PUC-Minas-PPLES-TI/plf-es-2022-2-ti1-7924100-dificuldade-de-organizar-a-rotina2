@@ -85,7 +85,7 @@ Desta forma, estabeleceu-se como público-alvo desta solução os homens e as mu
 
 # Especificações do Projeto
 
-...... Definimos os problemas e as questões mais importantes do projeto por meio de entrevistas realizadas por formulários on-line com pessoas de diferentes perfis. Pensando nisso, estabelecemos as conclusões desse processo por meio de personas e histórias de usuários.......
+Definimos os problemas e as questões mais importantes do projeto por meio de entrevistas realizadas por formulários on-line com pessoas de diferentes perfis. Pensando nisso, estabelecemos as conclusões desse processo por meio de personas e histórias de usuários
 
 
 ## Personas e Mapas de Empatia
