@@ -85,37 +85,16 @@ Desta forma, estabeleceu-se como público-alvo desta solução os homens e as mu
 
 # Especificações do Projeto
 
-...... COLOQUE AQUI O SEU TEXTO ......
+Definimos os problemas e as questões mais importantes do projeto por meio de entrevistas realizadas por formulários on-line com pessoas de diferentes perfis. Pensando nisso, estabelecemos as conclusões desse processo por meio de personas e histórias de usuários
 
-> Apresente uma visão geral do que será abordado nesta parte do
-> documento, enumerando as técnicas e/ou ferramentas utilizadas para
-> realizar a especificações do projeto
 
 ## Personas e Mapas de Empatia
 
-...... COLOQUE AQUI O SEU TEXTO ......
+As personas abordadas no projeto estão listadas abaixo:
 
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que
-> você deve ser enumerar e descrever precisamente e de forma
-> personalizada todos os principais envolvidos com a solução almeja.
->
-> Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina
-> e/ou nos seguintes links:
->
-> **Links Úteis**:
->
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Como fazer um mapa de empatia - Vídeo](https://www.youtube.com/watch?v=JlKHGpVoA2Y)
->
-> **Exemplo de Persona**
->
-> ![Exemplo de Persona](imaages/../images/persona.png)
->
-> Fonte: [Como criar uma persona para o seu negócio](https://raissaviegas.com.br/como-criar-uma-persona/)
+![Exemplo de Persona](imaages/../images/persona1.jpeg)
+![Exemplo de Persona](imaages/../images/persona2.jpeg)
+![Exemplo de Persona](imaages/../images/persona3.jpeg)
 
 ## Histórias de Usuários
 
@@ -123,20 +102,12 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 | EU COMO... `PERSONA` | QUERO/PRECISO ... `FUNCIONALIDADE`                               | PARA ... `MOTIVO/VALOR`             |
 | -------------------- | ---------------------------------------------------------------- | ----------------------------------- |
-| Geovana              | Registrar minhas tarefas não concluidas e horários para faze-las | Não esquecer de fazê-las            |
-| Kaio                 | Anotar as matérias que precisam ser estudadas no dia             | Não esquecer de estudar para provas |
+| Bruno Sampaio        | Organizar melhor os horários de estudo de meus mentorados        | Para que eles tenham uma melhor experiência com a mentoria e para que possa organizar melhor o meu tempo|
+| Bruno Sampaio        | Encaixar meus horários de estudo individual na minha rotina      | Para não comprometer o estudo das matérias em que estou cursando |
+| Gustavo Pereira      | Ser notificado sempre que tiver uma tarefa a fazer               | Para não esquecer de nenhuma atividade  |
+| Gustavo Pereira      |Conseguir relacionar todas as tarefas do meu dia em uma plataforma| Para ter uma melhor organização sobre minhas tarefas |
+| Luiza Campos         | Uma plataforma para organizar as atividades passadas aos alunos  |Para controlar melhor se os alunos estão ou não fazendo as atividades  |
 
-> Apresente aqui as histórias de usuário que são relevantes para o
-> projeto de sua solução. As Histórias de Usuário consistem em uma
-> ferramenta poderosa para a compreensão e elicitação dos requisitos
-> funcionais e não funcionais da sua aplicação. Se possível, agrupe as
-> histórias de usuário por contexto, para facilitar consultas
-> recorrentes à essa parte do documento.
->
-> **Links Úteis**:
->
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
 
 ## Requisitos
 
@@ -146,38 +117,23 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 | ID     | Descrição do Requisito                                    | Prioridade |
 | ------ | --------------------------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas                   | ALTA       |
-| RF-002 | Emitir relatório de tarefas da semana                     | MÉDIA      |
-| RF-003 | Permitir que o usuário cadastre eventos                   | ALTA       |
-| RF-004 | Enviar notificação por e-mail de um evento/tarefa proximo | MÉDIA      |
+| RF-001 | O site apresentará um calendário para o usuário marcar suas atividades                  | ALTA       |
+| RF-002 | O site terá um sistema de login                  | MÉDIA      |
+| RF-003 | O site deverá ter diversas opções de cadastro de eventos. (Ex. Tarefas, atividades, datas, feriados)              | MÉDIA      |
+| RF-004 | O site deverá ter um filtro/pesquisa de atividades e eventos | MÉDIA      |
+| RF-005 | O site deverá ter uma opção de marcar um evento como prioritário | BAIXA      |
+| RF-006 | O site deve ter uma aba para visualizar tarefas não concluídas | MÉDIA      |
+| RF-007 | O site permitirá customizações na página inicial (Ex. Modo escuro) | BAIXA      |
 
 ### Requisitos não Funcionais
 
 | ID      | Descrição do Requisito                                            | Prioridade |
 | ------- | ----------------------------------------------------------------- | ---------- |
-| RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA      |
-| RNF-002 | sistema deve ser de facil uso pelos usuários                      | MÉDIA      |
+| RNF-001 | O site deve conseguir ser utilizado com um simples tutorial       | ALTA     |
+| RNF-002 | O site deve ser compatível com qualquer dispositivo (Celulares, notebooks)   | ALTA      |
+| RNF-003 | O site deve ser publicado em um ambiente acessível publicamente na Internet (GitHub)    | ALTA     |
+| RNF-004 | O site deve apresentar uma interface simples e intuitiiva            | ALTA     |
 
-> Com base nas Histórias de Usuário, enumere os requisitos da sua
-> solução. Classifique esses requisitos em dois grupos:
->
-> - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na
->   plataforma (ex: cadastro de usuário).
->
-> - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade,
->   desempenho, confiabilidade, segurança ou outro (ex: suporte a
->   dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma
-> característica alvo da sua solução. Além disso, certifique-se de que
-> todos os aspectos capturados nas Histórias de Usuário foram cobertos.
->
-> **Links Úteis**:
->
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Restrições
 
@@ -186,63 +142,25 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 | ID  | Restrição                                             |
 | --- | ----------------------------------------------------- |
 | 01  | O projeto deverá ser entregue até o final do semestre |
-| 02  | Não pode ser desenvolvido um módulo de backend        |
+| 02  | Poderemos utilizar apenar o Frontend no projeto       |
 
-> Enumere as restrições à sua solução. Lembre-se de que as restrições
-> geralmente limitam a solução candidata.
->
-> **Links Úteis**:
->
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 # Projeto de Interface
 
-...... COLOQUE AQUI O SEU TEXTO DE INTRODUÇÃO ......
+Na hora de montar as interfaces do sistema nossas preocupações foram principalmente que ele fosse fácil de usar, com layouts intuitivos, e que fosse objetivo, com o usuário conseguindo fazer o que precisa de forma rápida e simples. Incluindo uma tela de login, uma home, uma tela de agenda e uma tela de estatísticas.
 
-> Apresente as principais interfaces da solução. Discuta como
-> foram elaboradas de forma a atender os requisitos funcionais, não
-> funcionais e histórias de usuário abordados nas [Especificações do
-> Projeto](#especificações-do-projeto).
 
 ## User Flow
 
-...... INCLUA AQUI O DIAGRAMA COM O FLUXO DO USUÁRIO NA APLICAÇÃO ......
-
-> Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor
-> mapear todo fluxo de telas do site ou app. Essa técnica funciona
-> para alinhar os caminhos e as possíveis ações que o usuário pode
-> fazer junto com os membros de sua equipe.
->
-> **Links Úteis**:
->
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
->
-> **Exemplo**:
->
-> ![Exemplo de UserFlow](images/userflow.jpg)
+![UserFlow](images/flowmap.png)
 
 ## Wireframes
 
-...... INCLUA AQUI OS WIREFRAMES DAS TELAS DA APLICAÇÃO COM UM BREVE DESCRITIVO ......
+Tela de Login para que o usuário possa logar ou se cadastrar no sistema
 
-> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a
-> estrutura de um site web e seu relacionamentos entre suas
-> páginas. Um wireframe web é uma ilustração semelhante ao
-> layout de elementos fundamentais na interface.
->
-> **Links Úteis**:
->
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
->
-> **Exemplo**:
->
-> ![Exemplo de Wireframe](images/wireframe-example.png)
+
+![Tela de Login](images/telaLogin.png)
+
 
 # Metodologia
 
