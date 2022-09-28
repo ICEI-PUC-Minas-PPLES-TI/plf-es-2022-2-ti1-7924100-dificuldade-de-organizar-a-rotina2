@@ -156,11 +156,30 @@ Na hora de montar as interfaces do sistema nossas preocupações foram principal
 
 ## Wireframes
 
-Tela de Login para que o usuário possa logar ou se cadastrar no sistema
+Tela de Login para que o usuário possa logar ou acessar a tela de cadastro do sistema
 
 
 ![Tela de Login](images/telaLogin.png)
 
+Tela de Home para que o usuário veja as ferramentas disponíveis e possa acessá-las
+
+
+![Tela de Home](images/telaHome.png)
+
+Tela de Cadastro para que o usuário possa se cadastrar no sistema
+
+
+![Tela de Cadastro](images/telaCadastro.png)
+
+Tela de Agenda para que o usuário possa acompanhar suas tarefas e cadastrar novas
+
+
+![Tela de Schedule](images/telaSchedule.png)
+
+Tela de Estatísticas para que o usuário possa acompanhar seu desempenho, a entrega de tarefas entre outras coisas.
+
+
+![Tela de Statistics](images/telaStatistics.png)
 
 # Metodologia
 
