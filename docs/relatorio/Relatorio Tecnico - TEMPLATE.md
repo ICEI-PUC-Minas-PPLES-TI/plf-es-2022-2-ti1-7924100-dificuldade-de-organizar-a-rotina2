@@ -147,49 +147,20 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Projeto de Interface
 
-...... COLOQUE AQUI O SEU TEXTO DE INTRODUÇÃO ......
+Na hora de montar as interfaces do sistema nossas preocupações foram principalmente que ele fosse fácil de usar, com layouts intuitivos, e que fosse objetivo, com o usuário conseguindo fazer o que precisa de forma rápida e simples. Incluindo uma tela de login, uma home, uma tela de agenda e uma tela de estatísticas.
 
-> Apresente as principais interfaces da solução. Discuta como
-> foram elaboradas de forma a atender os requisitos funcionais, não
-> funcionais e histórias de usuário abordados nas [Especificações do
-> Projeto](#especificações-do-projeto).
 
 ## User Flow
 
-...... INCLUA AQUI O DIAGRAMA COM O FLUXO DO USUÁRIO NA APLICAÇÃO ......
-
-> Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor
-> mapear todo fluxo de telas do site ou app. Essa técnica funciona
-> para alinhar os caminhos e as possíveis ações que o usuário pode
-> fazer junto com os membros de sua equipe.
->
-> **Links Úteis**:
->
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
->
-> **Exemplo**:
->
-> ![Exemplo de UserFlow](images/userflow.jpg)
+![UserFlow](images/flowmap.png)
 
 ## Wireframes
 
-...... INCLUA AQUI OS WIREFRAMES DAS TELAS DA APLICAÇÃO COM UM BREVE DESCRITIVO ......
+Tela de Login para que o usuário possa logar ou se cadastrar no sistema
 
-Fluxo completo do sistema
-![Fluxo Completo](images/wireframe-example.png)
->
-> **Links Úteis**:
->
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
->
-> **Exemplo**:
->
-> ![Exemplo de Wireframe](images/wireframe-example.png)
+
+![Tela de Login](images/telaLogin.png)
+
 
 # Metodologia
 
