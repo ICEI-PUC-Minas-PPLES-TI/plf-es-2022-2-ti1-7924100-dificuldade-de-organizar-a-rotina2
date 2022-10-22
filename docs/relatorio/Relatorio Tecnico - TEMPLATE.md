@@ -63,25 +63,24 @@ Conforme exposto, o problema que se busca resolver com este projeto é a limita�
 
 ## Objetivos
 
-Objetivos
-O objetivo geral deste trabalho é a criação de um portal de notícias que apresente ferramentas de fácil uso e que permita o acesso a um universo variado e isento de notícias e informações sobre fatos em diversas áreas.
+O objetivo deste trabalho é a elaboração de uma agenda com ferramentas que proporcione a listagem de tarefas nos dias das semanas com um relatório semanal do que foi feito e o que foi deixado de ser entregue.
 
 Como objetivos específicos, podemos ressaltar:
--Fornecer funcionalidades que permitam interagir com as notícias apresentadas por meio de comentários e pelo compartilhamento das notícias em redes sociais;
--Integrar com centrais de notícias espalhadas na Internet.
--Permitir a criação de canais personalizados por usuário com tópicos de interesse individual.
+    • Fornecer uma agenda onde vai ser listado tarefas do dia a dia;
+    • Gerar relatórios semanais de aproveitamento da semana.
+    • Permitir a categorização das tarefas com classificações de urgencia e comentarios.
 
 ## Justificativa
 
-Em estudo da Reuters, realizado com um grupo de 74 mil pessoas, em 37 países diferentes, fica claro o volume preocupante de informações falsas sendo propagadas (NEWMAN et al; 2019). O estudo apresenta que no brasil 35% dos entrevistados informam que as informações consumidas são completamente inventadas.
+Em uma pesquisa realizada pela Associação Brasileira de Educação a Distância (ABED) sobre atividades remotas na educação, foi visto que certa de 67% dos alunos mostram dificuldade para organizar suas rotinas diárias.
 
-Adicionalmente, há uma falta de canais de notícias isentos e objetivos que permitam aos usuários, leitores frequentes de jornais, possam ter a mesma experiência dos jornais tradicionais em ferramentas digitais.
+Junto a isso sabemos que isso ocorre não apenas em atividades de estudo remotas mas também nas presenciais e por conta disso muitos alunos deixam de entregar seus deveres.
 
 ## Público-Alvo
 
-Embora todas as pessoas possam se beneficiar de soluções isentas para se informarem, o foco deste trabalho está no público que tem o hábito de ler notícias nos contextos das suas áreas de atuação com o intuito de ampliarem sua condição de atuarem profissionalmente.
+Apesar de ser uma aplicação que pode gerar soluções para todos o foco deste projéto e nos estudante de ensino remoto e presencial que precisam de auxilio para organizar suas tarefas diárias de forma que consiga entregar seus trabalhos e estudar para suas provas, e também em professores para que consigam marcar trabalhos, tarefas e provas para seus alunos sem conflito de datas e horários. 
 
-Desta forma, estabeleceu-se como público-alvo desta solução os homens e as mulheres entre 30 e 45 anos que se encontram em oportunidades de trabalho que exigem constante atualização e que fazem uso frequente de computadores e dispositivos móveis para se atualizarem com tópicos que vão além dos assuntos relacionados às suas atividades profissionais.
+Com isso se estabelece como publico alvo deste projeto alunos acima de 14 anos que necessitam de organizar suas rotinas diárias para melhor aproveitamento de seus estudos.
 
 # Especificações do Projeto
 
