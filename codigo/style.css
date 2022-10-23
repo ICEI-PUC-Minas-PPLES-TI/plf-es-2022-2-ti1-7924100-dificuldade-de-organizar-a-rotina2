@@ -45,17 +45,7 @@ body
     height: 420px;
     
 }
-@keyframes animate
-{
-   0% 
-    {
-        transform:rotate(0deg);
-    }
-   100% 
-    {
-        transform:rotate(360deg);
-    }
-}
+
 .form
 {
     position: absolute;
@@ -74,6 +64,16 @@ body
     text-align: center;
     letter-spacing: 0.1em;
 }
+
+.form h3
+{
+    margin: 20px 0 20px 0;
+    color: #0a6fb8;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
 .inputBox
 {
     position: relative;
@@ -164,4 +164,16 @@ input[type="submit"]
 input[type="submit"]:active
 {
     opacity: 0.8;
+}
+
+.box-estatisticas
+{
+    position:relative;
+    width: 1000px;
+    height: 800px;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    
 }
