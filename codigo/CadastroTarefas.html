@@ -10,22 +10,37 @@
         <div class="form">
             <h2>Cadastro de Taréfas</h2>
             <div class="inputBox">
-                <input type="text" id="nomeTarefa">
+                <input type="text" required="required" id="nomeTarefa">
                 <span>Nome da Taréfa</span>
                 <i></i>
             </div>
             <div class="inputBox">
-                <input type="text" id="categoriaTarefa">
-                <span>Categoria da Taréfa</span>
+                <input type="Categoria" required="Categoria">
+                <span>Categoria</span>
                 <i></i>
-            </div>
+        <div class="select">
+            <select name="format" id="categoriaTarefa">
+                <option selected disabled>Escolha uma cor</option>
+                <option value="Preto">Preto</option>
+                <option value="Branco">Branco</option>
+                <option value="Verde">Verde</option>
+                <option value="Azul">Azul</option>
+                <option value="Vermelho">Vermelho</option>
+                <option value="Roxo">Roxo</option>
+                <option value="Rosa">Rosa</option>
+                <option value="Amarelo">Amarelo</option>
+                <option value="Laranja">Laranja</option>
+
+            </select>
+        </div>
+        </div>
             <div class="inputBox">
-                <input type="text" id="dataEntrega">
+                <input type="text" required="required" id="dataEntrega">
                 <span>Data de Entrega</span>
                 <i></i>
             </div>
             <div class="inputBox">
-                    <input type="text" id="observacoes">
+                    <input type="text" required="required" id="observacoes">
                     <span>Observações</span>
                     <i></i>
             </div>
@@ -33,6 +48,7 @@
                 <a href="#">Tipos de categorias disponiveis</a>
             </div>
             <input type="submit" id="btnCadastrar">
+            <button id="btnExcluir">Excluir</button>
         </div>
     </div>
     <script src="cadastroTarefa.js"></script>
