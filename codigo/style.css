@@ -165,7 +165,6 @@ input[type="submit"]
 input[type="submit"]:active
 {
     opacity: 0.8;
-<<<<<<< HEAD
 
 }
 button
@@ -184,7 +183,6 @@ button
 }
 
 
-=======
 }
 
 .box-estatisticas
@@ -198,4 +196,3 @@ button
     display: flex;
     
 }
->>>>>>> c7ecdd2210746ee72fdca228a0d0f4d695991f55

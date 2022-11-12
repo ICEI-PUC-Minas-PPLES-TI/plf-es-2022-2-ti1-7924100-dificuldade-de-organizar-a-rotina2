@@ -1,0 +1,61 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    width: 1000px;
+    border-collapse: collapse;
+    padding: 10px;  
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+thead{
+    background-color: #0a6fb8;
+    color: white;
+}
+
+#filtrosContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#containerSelectCategorias {
+    margin: 5% 0 5% 0;
+}
+
+#containerSelectConcluida {
+    margin: 5% 0 5% 0;
+}
+
+#btnFiltro{
+    border: none;
+    outline: none;
+    background: #d0d3d3;
+    padding: 10px 10px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    color: #0a6fb8;
+    justify-content: center
+}
+
+#botaoFiltroContainer{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20% 0;
+}

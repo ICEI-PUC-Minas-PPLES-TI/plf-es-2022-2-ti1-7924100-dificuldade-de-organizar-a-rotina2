@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="listagemTarefas.css">
+</head>
+<body>
+    <h1 id="tituloListagemTarefas">Lista de Tarefas</h1>
+    <div id="filtrosContainer">
+        <div id="containerSelectCategorias">
+            Categoria: <select id="selectCategorias">
+                <option>Nenhuma</option>
+            </select>
+        </div>
+        <div id= "containerSelectConcluida">
+            Conclusão: <select id="selectConcluida">
+                <option value="Todas">Todas</option>
+                <option value="true">Concluida</option>
+                <option value="false">Não Concluída</option>
+            </select>
+        </div>
+        <div id="botaoFiltroContainer">
+            <button id="btnFiltro">Filtrar</button>
+        </div>
+    </div>
+    <div id="container">
+        <div id="header">
+            <div id="list"></div>
+        </div>
+    </div>
+    
+    <script src="listagemTarefas.js"></script>
+</body>
+</html>
