@@ -59,3 +59,16 @@ thead{
     justify-content: center;
     margin: 0 0 20% 0;
 }
+#btnAtualizar{
+    border: none;
+    outline: none;
+    background: #d0d3d3;
+    padding: 10px 10px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    color: #0a6fb8;
+    justify-content: center
+}

@@ -8,8 +8,13 @@ function leTarefa() {
     }
     else {
         objDados = { tarefas: [ 
-            {id: 1, tarefa: "Trabalho TIAW", categoria: "Urgente", dataEntrega: "23/10/2022", observacoes: "Não deve possuir Backend"},
-            {id: 2, tarefa: "Trabalho tiaw", categoria: "moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend"} ]
+            {id: 1, nomeTarefa: "Trabalho TIAW", categoriaTarefa: "Urgente", dataEntrega: "23/10/2022", observacoes: "Não deve possuir Backend", concluida: "pendente"},
+            {id: 2, nomeTarefa: "Trabalho tiaw", categoriaTarefa: "moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente"}],
+            categorias: [
+                { id: 1, nomeCategoria: "Urgente" },
+                { id: 2, nomeCategoria: "Moderado" },
+                { id: 3, nomeCategoria: "Fácil" }
+              ] 
         }
     }
 
@@ -33,10 +38,11 @@ function incluirTarefa() {
     let strObservacoes = document.getElementById ('observacoes').value;
     let novaTarefa = {
         id: novoId,
-        tarefa: strNomeTarefa,
-        categoria: strCategoriaTarefa,
+        nomeTarefa: strNomeTarefa,
+        categoriaTarefa: strCategoriaTarefa,
         dataEntrega: strDataEntrega,
-        observacoes: strObservacoes
+        observacoes: strObservacoes,
+        concluida: "pendente"
     };
     objDados.tarefas.push (novaTarefa);
     if(novaTarefa.categoria == "Escolha uma cor"){
