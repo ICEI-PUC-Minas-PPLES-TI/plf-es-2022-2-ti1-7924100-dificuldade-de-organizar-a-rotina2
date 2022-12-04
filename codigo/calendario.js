@@ -1,6 +1,6 @@
 let nav = 0;
 let clicked = null;
-let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
+var db = localStorage.getItem('db') ? JSON.parse(localStorage.getItem('db')) : [];
 
 const calendar = document.getElementById('calendar');
 const newEventModal = document.getElementById('newEventModal');
@@ -12,8 +12,7 @@ const weekdays = ['Domingo', 'Segunda', 'Terca', 'Quarta', 'Quinta', 'Sexta', 'S
 function openModal(date) {
   clicked = date;
 
-  const eventForDay = events.find(e => e.date === clicked);
-
+  const eventForDay = db.tarefas.find(e => e.date === clicked);
   if (eventForDay) {
     document.getElementById('eventText').innerText = eventForDay.title;
     deleteEventModal.style.display = 'block';
@@ -25,7 +24,8 @@ function openModal(date) {
 }
 
 function load() {
-  const dt = new Date();
+  if(db.length != 0){
+    const dt = new Date();
 
   if (nav !== 0) {
     dt.setMonth(new Date().getMonth() + nav);
@@ -59,7 +59,7 @@ function load() {
 
     if (i > paddingDays) {
       daySquare.innerText = i - paddingDays;
-      const eventForDay = events.find(e => e.date === dayString);
+      const eventForDay = db.tarefas.find(e => e.date === dayString);
 
       if (i - paddingDays === day && nav === 0) {
         daySquare.id = 'currentDay';
@@ -79,6 +79,9 @@ function load() {
 
     calendar.appendChild(daySquare);    
   }
+  }else {
+    localStorage.setItem('db', JSON.stringify([]));
+  }
 }
 
 function closeModal() {
@@ -95,12 +98,12 @@ function saveEvent() {
   if (eventTitleInput.value) {
     eventTitleInput.classList.remove('error');
 
-    events.push({
+    db.tarefas.push({
       date: clicked,
       title: eventTitleInput.value,
     });
 
-    localStorage.setItem('events', JSON.stringify(events));
+    localStorage.setItem('db', JSON.stringify(db));
     closeModal();
   } else {
     eventTitleInput.classList.add('error');
@@ -108,8 +111,8 @@ function saveEvent() {
 }
 
 function deleteEvent() {
-  events = events.filter(e => e.date !== clicked);
-  localStorage.setItem('events', JSON.stringify(events));
+  db.tarefas = db.tarefas.filter(e => e.date !== clicked);
+  localStorage.setItem('db', JSON.stringify(db));
   closeModal();
 }
 

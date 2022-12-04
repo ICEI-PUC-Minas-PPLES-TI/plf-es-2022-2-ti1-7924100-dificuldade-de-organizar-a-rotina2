@@ -1,5 +1,5 @@
 function leDados() {
-    let strDados = localStorage.getItem('events');
+    let strDados = localStorage.getItem('db');
     let objDados = {};
   
     if (strDados) {
@@ -8,11 +8,11 @@ function leDados() {
     else {
       objDados = {
         tarefas: [
-          { nomeTarefa: "Trabalho TIAW", categoriaTarefa: "Urgente", dataEntrega: "23/10/2022", observacoes: "Não deve possuir Backend", concluida: true },
-          { nomeTarefa: "Prova de IC", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: false },
-          { nomeTarefa: "Trabalho PROG2", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: false },
-          { nomeTarefa: "Trabalho AEDS I ", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: true },
-          { nomeTarefa: "Trabalho Calculo", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: false }],
+          { nome: "Trabalho TIAW", categoriaTarefa: "Urgente", dataEntrega: "23/10/2022", observacoes: "Não deve possuir Backend", concluida: true },
+          { nome: "Prova de IC", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: false },
+          { nome: "Trabalho PROG2", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: false },
+          { nome: "Trabalho AEDS I ", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: true },
+          { nome: "Trabalho Calculo", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: false }],
         categorias: [
           { id: 1, nomeCategoria: "Urgente" },
           { id: 2, nomeCategoria: "Moderado" },

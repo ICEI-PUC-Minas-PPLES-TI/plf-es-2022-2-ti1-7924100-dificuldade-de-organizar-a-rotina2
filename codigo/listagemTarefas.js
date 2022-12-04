@@ -1,5 +1,5 @@
 function leDados() {
-  let strDados = localStorage.getItem('events');
+  let strDados = localStorage.getItem('db');
   let objDados = {};
 
   if (strDados) {
@@ -8,11 +8,11 @@ function leDados() {
   else {
     objDados = {
       tarefas: [
-        { id: "1", nomeTarefa: "Trabalho TIAW", categoriaTarefa: "Urgente", dataEntrega: "23/10/2022", observacoes: "Não deve possuir Backend", concluida: "pendente" },
-        { id: "2", nomeTarefa: "Prova de IC", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente" },
-        { id: "3", nomeTarefa: "Trabalho PROG2", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente" },
-        { id: "4", nomeTarefa: "Trabalho AEDS I ", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente" },
-        { id: "5", nomeTarefa: "Trabalho Calculo", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente" }],
+        { id: "1", nome: "Trabalho TIAW", categoriaTarefa: "Urgente", dataEntrega: "23/10/2022", observacoes: "Não deve possuir Backend", concluida: "pendente" },
+        { id: "2", nome: "Prova de IC", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente" },
+        { id: "3", nome: "Trabalho PROG2", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente" },
+        { id: "4", nome: "Trabalho AEDS I ", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente" },
+        { id: "5", nome: "Trabalho Calculo", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente" }],
       categorias: [
         { id: 1, nomeCategoria: "Urgente" },
         { id: 2, nomeCategoria: "Moderado" },
@@ -64,7 +64,7 @@ function constroiListagem(tarefas) {
       list += `
             <tbody>
             <tr>
-            <td>${tarefa.nomeTarefa}</td>
+            <td>${tarefa.nome}</td>
             <td>${tarefa.categoriaTarefa}</td>
             <td>${tarefa.dataEntrega}</td>
             <td>${tarefa.observacoes}</td>
@@ -96,7 +96,7 @@ dados.tarefas.forEach(tarefa  => {
       tarefa.concluida = radios[i].value;
     }
   }
-  localStorage.setItem('events', JSON.stringify(dados));
+  localStorage.setItem('db', JSON.stringify(dados));
   console.log(tarefa);
 })
 alert("Status das Tarefas Alterado Com Sucesso, Cheque o Console para ver")
