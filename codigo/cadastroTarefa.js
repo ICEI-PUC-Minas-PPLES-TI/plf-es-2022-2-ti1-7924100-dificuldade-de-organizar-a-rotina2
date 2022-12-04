@@ -1,6 +1,6 @@
 
 function leTarefa() {
-    let strDados = localStorage.getItem('db');
+    let strDados = localStorage.getItem('events');
     let objDados = {};
     
     if (strDados) {
@@ -8,8 +8,8 @@ function leTarefa() {
     }
     else {
         objDados = { tarefas: [ 
-            {id: 1, nomeTarefa: "Trabalho TIAW", categoriaTarefa: "Urgente", dataEntrega: "23/10/2022", observacoes: "Não deve possuir Backend", concluida: "pendente"},
-            {id: 2, nomeTarefa: "Trabalho tiaw", categoriaTarefa: "moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente"}],
+            {id: 1, nomeTarefa: "Trabalho TIAW", categoriaTarefa: "pendente", date: "23/10/2022", observacoes: "Não deve possuir Backend", concluida: "pendente"},
+            {id: 2, nomeTarefa: "Trabalho tiaw", categoriaTarefa: "perdido", date: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente"}],
             categorias: [
                 { id: 1, nomeCategoria: "Urgente" },
                 { id: 2, nomeCategoria: "Moderado" },
@@ -22,7 +22,7 @@ function leTarefa() {
 }
 
 function SalvarTarefa(dados) {
-    localStorage.setItem('db', JSON.stringify (dados));
+    localStorage.setItem('events', JSON.stringify (dados));
 
 }
 
@@ -40,7 +40,7 @@ function incluirTarefa() {
         id: novoId,
         nomeTarefa: strNomeTarefa,
         categoriaTarefa: strCategoriaTarefa,
-        dataEntrega: strDataEntrega,
+        date: strDataEntrega,
         observacoes: strObservacoes,
         concluida: "pendente"
     };

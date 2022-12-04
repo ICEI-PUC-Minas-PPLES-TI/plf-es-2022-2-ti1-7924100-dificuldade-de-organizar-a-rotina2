@@ -1,5 +1,5 @@
 function leDados() {
-  let strDados = localStorage.getItem('db');
+  let strDados = localStorage.getItem('events');
   let objDados = {};
 
   if (strDados) {
@@ -96,7 +96,7 @@ dados.tarefas.forEach(tarefa  => {
       tarefa.concluida = radios[i].value;
     }
   }
-  localStorage.setItem('db', JSON.stringify(dados));
+  localStorage.setItem('events', JSON.stringify(dados));
   console.log(tarefa);
 })
 alert("Status das Tarefas Alterado Com Sucesso, Cheque o Console para ver")

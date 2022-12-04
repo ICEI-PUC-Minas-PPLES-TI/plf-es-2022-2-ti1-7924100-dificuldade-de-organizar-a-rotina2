@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box">
+    <div id="cadastroTarefaModel" class="box">
         <div class="form">
             <h2>Cadastro de Taréfas</h2>
             <div class="inputBox">
@@ -20,22 +20,15 @@
                 <i></i>
         <div class="select">
             <select name="format" id="categoriaTarefa">
-                <option selected disabled>Escolha uma cor</option>
-                <option value="Preto">Preto</option>
-                <option value="Branco">Branco</option>
-                <option value="Verde">Verde</option>
-                <option value="Azul">Azul</option>
-                <option value="Vermelho">Vermelho</option>
-                <option value="Roxo">Roxo</option>
-                <option value="Rosa">Rosa</option>
-                <option value="Amarelo">Amarelo</option>
-                <option value="Laranja">Laranja</option>
-
+                <option selected disabled>Escolha um categoria</option>
+                <option value="pendente">Pendente</option>
+                <option value="concluida">Concluida</option>
+                <option value="perdida">Perdida</option>
             </select>
         </div>
         </div>
             <div class="inputBox">
-                <input type="text" required="required" id="dataEntrega">
+                <input type="text"  id="dataEntrega" placeholder="dd/mm/yy">
                 <span>Data de Entrega</span>
                 <i></i>
             </div>
@@ -52,5 +45,7 @@
         </div>
     </div>
     <script src="cadastroTarefa.js"></script>
+    <script src="calendario.js"></script>
+
 </body>
 </html>
