@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Rotim</title>
+
+    <link rel="stylesheet" href="calendario.css">
+  </head>
+  <body>
+    
+    <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button id="backButton">Anterior</button>
+          <button id="nextButton">Proximo</button>
+        </div>
+      </div>
+
+      <div id="weekdays">
+        <div>Domingo</div>
+        <div>Segunda</div>
+        <div>Terca</div>
+        <div>Quarta</div>
+        <div>Quinta</div>
+        <div>Sexta</div>
+        <div>Sabado</div>
+      </div>
+
+      <div id="calendar"></div>
+    </div>
+
+    <div id="newEventModal">
+      <h2>Novo Evento</h2>
+
+      <input id="eventTitleInput" placeholder="Evento" />
+
+      <button id="saveButton">Salvar</button>
+      <button id="cancelButton">Cancelar</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Evento</h2>
+
+      <p id="eventText"></p>
+
+      <button id="deleteButton">Deletar</button>
+      <button id="closeButton">Fechar</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+
+    <script src="calendario.js"></script>
+  </body>
+</html>
