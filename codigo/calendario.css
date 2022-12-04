@@ -15,6 +15,7 @@ button {
   color: white;
 }
 
+
 #header {
   padding: 10px;
   color: #0a6fb8;
@@ -122,4 +123,19 @@ button {
   height: 100vh;
   position: absolute;
   background-color: rgba(0,0,0,0.8);
+}
+.botao
+{
+  background-color: #0a6fb8;
+    color: white;
+
+    
+    
+
+}
+.cabeca {
+  background-color: #0d6efd;
+  height: 100px;
+  display: flex;
+ 
 }
