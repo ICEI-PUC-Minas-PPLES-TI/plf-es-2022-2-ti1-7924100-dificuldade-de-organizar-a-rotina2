@@ -8,15 +8,15 @@ function leDados() {
     else {
       objDados = {
         tarefas: [
-          { nome: "Trabalho TIAW", categoriaTarefa: "Urgente", dataEntrega: "23/10/2022", observacoes: "Não deve possuir Backend", concluida: true },
-          { nome: "Prova de IC", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: false },
-          { nome: "Trabalho PROG2", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: false },
-          { nome: "Trabalho AEDS I ", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: true },
-          { nome: "Trabalho Calculo", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: false }],
+          { nome: "Trabalho TIAW", categoria: "Urgente", date: "23/10/2022", observacoes: "Não deve possuir Backend", concluida: "concluida" },
+          { nome: "Prova de IC", categoria: "Moderado", date: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "concluida" },
+          { nome: "Trabalho PROG2", categoria: "Moderado", date: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "concluida"  },
+          { nome: "Trabalho AEDS I ", categoria: "Moderado", date: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "concluida"  },
+          { nome: "Trabalho Calculo", categoria: "Moderado", date: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "concluida"  }],
         categorias: [
-          { id: 1, nomeCategoria: "Urgente" },
-          { id: 2, nomeCategoria: "Moderado" },
-          { id: 3, nomeCategoria: "Fácil" }
+          { id: 1, categoria: "Urgente" },
+          { id: 2, categoria: "Moderado" },
+          { id: 3, categoria: "Fácil" }
         ]
       }
     }
@@ -27,10 +27,10 @@ function leDados() {
   function calculaDadosGraficoBarra(dados) {
     const nomesCategorias = [];
     const quantidadesCategorias = [];
-  
+    
     dados.categorias.map((categoria) => {
-      const tarefasCategoria = dados.tarefas.filter(tarefa => tarefa.categoriaTarefa == categoria.nomeCategoria);
-      nomesCategorias.push(categoria.nomeCategoria);
+      const tarefasCategoria = dados.tarefas.filter(tarefa => tarefa.categoria == categoria.nome);
+      nomesCategorias.push(categoria.nome);
       quantidadesCategorias.push(tarefasCategoria.length);
     });
   
@@ -51,8 +51,8 @@ function leDados() {
   
   function constroiGraficoRosca(dados) {
   
-    const concluidos = dados.tarefas.filter(tarefa => tarefa.concluida);
-    const naoConcluidos = dados.tarefas.filter(tarefa => !tarefa.concluida);
+    const concluidos = dados.tarefas.filter(tarefa => tarefa.concluida === "concluida");
+    const naoConcluidos = dados.tarefas.filter(tarefa => tarefa.concluida !== "concluida");
   
     const data = {
       labels: ['Concluídas', 'Não Concluídas'],

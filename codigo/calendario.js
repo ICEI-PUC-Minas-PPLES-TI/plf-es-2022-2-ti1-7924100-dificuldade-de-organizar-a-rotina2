@@ -1,30 +1,45 @@
 let nav = 0;
 let clicked = null;
 var db = localStorage.getItem('db') ? JSON.parse(localStorage.getItem('db')) : [];
+var alreadyLoaded = false;
 
 const calendar = document.getElementById('calendar');
 const newEventModal = document.getElementById('newEventModal');
 const deleteEventModal = document.getElementById('deleteEventModal');
 const backDrop = document.getElementById('modalBackDrop');
-const eventTitleInput = document.getElementById('eventTitleInput');
+const eventDescriptionInput = document.getElementById('eventText');
 const weekdays = ['Domingo', 'Segunda', 'Terca', 'Quarta', 'Quinta', 'Sexta', 'Sabado'];
+const deleteEventTitle = document.getElementById('deleteEventTitle');
+const deleteEventCategory = document.getElementById('deleteEventCategory');
 
-function openModal(date) {
+function redirectToCreate(date) {
   clicked = date;
-
   const eventForDay = db.tarefas.find(e => e.date === clicked);
-  if (eventForDay) {
-    document.getElementById('eventText').innerText = eventForDay.title;
-    deleteEventModal.style.display = 'block';
-  } else {
-    newEventModal.style.display = 'block';
-  }
 
-  backDrop.style.display = 'block';
+  if (!eventForDay) {
+    window.location.href = './CadastroTarefas.html';
+  } else {
+    eventDescriptionInput.innerHTML = `<b>Observacoes: </b>${eventForDay.observacoes}`;
+    deleteEventTitle.innerHTML = eventForDay.nome;
+    deleteEventCategory.innerHTML = `<b>Categoria: </b>${eventForDay.categoria}`;
+    deleteEventModal.style.display = 'block';
+    backDrop.style.display = 'block';
+  }
 }
 
 function load() {
-  if(db.length != 0){
+  if(alreadyLoaded){
+    calendar.innerHTML = '';
+  }
+  alreadyLoaded = true;
+  if(db.length == 0){
+    const dbSetup = {
+      "tarefas": [],
+      "categorias": []
+    };
+    localStorage.setItem('db', JSON.stringify(dbSetup));
+    db = dbSetup;
+  }
     const dt = new Date();
 
   if (nav !== 0) {
@@ -49,9 +64,8 @@ function load() {
   document.getElementById('monthDisplay').innerText = 
     `${dt.toLocaleDateString('pt-br', { month: 'long' })} ${year}`;
 
-  calendar.innerHTML = '';
 
-  for(let i = 1; i <= paddingDays + daysInMonth; i++) {
+  for(let i = 0; i <= paddingDays + daysInMonth; i++) {
     const daySquare = document.createElement('div');
     daySquare.classList.add('day');
 
@@ -59,29 +73,28 @@ function load() {
 
     if (i > paddingDays) {
       daySquare.innerText = i - paddingDays;
-      const eventForDay = db.tarefas.find(e => e.date === dayString);
+      let eventForDay;
+      db.tarefas ? eventForDay = db.tarefas.filter(e => e.date === dayString) : eventForDay = null;
 
       if (i - paddingDays === day && nav === 0) {
         daySquare.id = 'currentDay';
       }
 
-      if (eventForDay) {
+      if (eventForDay && eventForDay.length > 0) {
         const eventDiv = document.createElement('div');
         eventDiv.classList.add('event');
-        eventDiv.innerText = eventForDay.title;
+        eventDiv.innerText = eventForDay[0].nome;
         daySquare.appendChild(eventDiv);
       }
 
-      daySquare.addEventListener('click', () => openModal(dayString));
+      daySquare.addEventListener('click', () => redirectToCreate(dayString));
     } else {
       daySquare.classList.add('padding');
     }
 
     calendar.appendChild(daySquare);    
   }
-  }else {
-    localStorage.setItem('db', JSON.stringify([]));
-  }
+  
 }
 
 function closeModal() {
@@ -91,29 +104,13 @@ function closeModal() {
   backDrop.style.display = 'none';
   eventTitleInput.value = '';
   clicked = null;
-  load();
-}
-
-function saveEvent() {
-  if (eventTitleInput.value) {
-    eventTitleInput.classList.remove('error');
-
-    db.tarefas.push({
-      date: clicked,
-      title: eventTitleInput.value,
-    });
-
-    localStorage.setItem('db', JSON.stringify(db));
-    closeModal();
-  } else {
-    eventTitleInput.classList.add('error');
-  }
 }
 
 function deleteEvent() {
   db.tarefas = db.tarefas.filter(e => e.date !== clicked);
   localStorage.setItem('db', JSON.stringify(db));
   closeModal();
+  load();
 }
 
 function initButtons() {
@@ -127,7 +124,6 @@ function initButtons() {
     load();
   });
 
-  document.getElementById('saveButton').addEventListener('click', saveEvent);
   document.getElementById('cancelButton').addEventListener('click', closeModal);
   document.getElementById('deleteButton').addEventListener('click', deleteEvent);
   document.getElementById('closeButton').addEventListener('click', closeModal);

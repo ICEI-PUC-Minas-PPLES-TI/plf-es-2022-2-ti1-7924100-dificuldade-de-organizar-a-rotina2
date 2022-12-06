@@ -5,20 +5,29 @@
     <title>Estatísticas de Tarefas</title>
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-    <div class="box-estatisticas">
-        <div class="form">
-            <h2>Estatísticas de Taréfas</h2>
-            <h3>Taréfas por Categoria</h3>
-            <div>
-                <canvas id="graficoBarra" height="10vh" width="40vw"></canvas>
-            </div>
-            <h3>Tarefas Concluídas</h3>
-            <div>
-                <canvas id="graficoRosca"></canvas>
+    <div>
+        <div class="containerBtnHome">
+            <a href="./calendario.html">
+                <button class="btnHome"><i class="fa fa-home"></i></button>
+            </a>
+        </div>
+        <div class="box-estatisticas">
+            <div class="form">
+                
+                <h2>Estatísticas de Taréfas</h2>
+                <h3>Taréfas por Categoria</h3>
+                <div>
+                    <canvas id="graficoBarra" height="10vh" width="40vw"></canvas>
+                </div>
+                <h3>Tarefas Concluídas</h3>
+                <div>
+                    <canvas id="graficoRosca"></canvas>
+                </div>
             </div>
         </div>
     </div>

@@ -8,15 +8,15 @@ function leDados() {
   else {
     objDados = {
       tarefas: [
-        { id: "1", nome: "Trabalho TIAW", categoriaTarefa: "Urgente", dataEntrega: "23/10/2022", observacoes: "Não deve possuir Backend", concluida: "pendente" },
-        { id: "2", nome: "Prova de IC", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente" },
-        { id: "3", nome: "Trabalho PROG2", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente" },
-        { id: "4", nome: "Trabalho AEDS I ", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente" },
-        { id: "5", nome: "Trabalho Calculo", categoriaTarefa: "Moderado", dataEntrega: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente" }],
+        { id: "1", nome: "Trabalho TIAW", categoria: "Urgente", date: "23/10/2022", observacoes: "Não deve possuir Backend", concluida: "pendente" },
+        { id: "2", nome: "Prova de IC", categoria: "Moderado", date: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente" },
+        { id: "3", nome: "Trabalho PROG2", categoria: "Moderado", date: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente" },
+        { id: "4", nome: "Trabalho AEDS I ", categoria: "Moderado", date: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente" },
+        { id: "5", nome: "Trabalho Calculo", categoria: "Moderado", date: "22/10/2022", observacoes: "não deve possuir Backend", concluida: "pendente" }],
       categorias: [
-        { id: 1, nomeCategoria: "Urgente" },
-        { id: 2, nomeCategoria: "Moderado" },
-        { id: 3, nomeCategoria: "Fácil" }
+        { id: 1, nome: "Urgente" },
+        { id: 2, nome: "Moderado" },
+        { id: 3, nome: "Fácil" }
       ]
     }
   }
@@ -65,8 +65,8 @@ function constroiListagem(tarefas) {
             <tbody>
             <tr>
             <td>${tarefa.nome}</td>
-            <td>${tarefa.categoriaTarefa}</td>
-            <td>${tarefa.dataEntrega}</td>
+            <td>${tarefa.categoria}</td>
+            <td>${tarefa.date}</td>
             <td>${tarefa.observacoes}</td>
             <td>
             <form>
@@ -97,7 +97,6 @@ dados.tarefas.forEach(tarefa  => {
     }
   }
   localStorage.setItem('db', JSON.stringify(dados));
-  console.log(tarefa);
 })
 alert("Status das Tarefas Alterado Com Sucesso, Cheque o Console para ver")
 }
@@ -107,9 +106,9 @@ function preencheSelectCategorias(categorias) {
   
   categorias.forEach((categoria) => {
     let option = document.createElement("option");
-    option.setAttribute('value', categoria.nomeCategoria);
+    option.setAttribute('value', categoria.nome);
     
-    let optionText = document.createTextNode(categoria.nomeCategoria);
+    let optionText = document.createTextNode(categoria.nome);
     option.appendChild(optionText);
     
     selectCategorias.appendChild(option);
@@ -121,7 +120,6 @@ function filtra() {
   
   let { tarefas } = leDados();
   
-  console.log(tarefas);
   const filtroCategoria = document.getElementById("selectCategorias").value;
   const filtroConcluida = document.getElementById("selectConcluida").value;
   
@@ -130,7 +128,7 @@ function filtra() {
 
   }
   if( filtroCategoria != "Nenhuma"){
-    tarefas = tarefas.filter((tarefa) => tarefa.categoriaTarefa === filtroCategoria);
+    tarefas = tarefas.filter((tarefa) => tarefa.categoria === filtroCategoria);
   }
 
   constroiListagem(tarefas);

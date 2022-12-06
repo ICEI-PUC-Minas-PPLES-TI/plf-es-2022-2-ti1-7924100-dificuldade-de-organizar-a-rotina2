@@ -12,13 +12,12 @@
       
       <div id="header">
         <div> 
-            <a href="http://127.0.0.1:5500/codigo/estatisticasTarefas.html"> <button>Estatisticas</button></a>
-            <a href="http://127.0.0.1:5500/codigo/cadastroCategoria.html"> <button>Cadastro  Categorias</button></a>
-             <a href="http://127.0.0.1:5500/codigo/listagemTarefas.html"> <button>Listagem Tarefas</button></a>
-          <a href="http://127.0.0.1:5500/codigo/CadastroTarefas.html"> <button>Cadastro Tarefas</button></a>
+            <a href="./estatisticasTarefas.html"> <button>Estatisticas</button></a>
+            <a href="./cadastroCategoria.html"> <button>Cadastro  Categorias</button></a>
+             <a href="./listagemTarefas.html"> <button>Listagem Tarefas</button></a>
+          <a href="./CadastroTarefas.html"> <button>Cadastro Tarefas</button></a>
         </div>
           
-        <div id="monthDisplay"></div>
         <div>
           
           <button id="backButton">Anterior</button>
@@ -26,16 +25,7 @@
         </div>
       </div>
       
-
-      <div id="weekdays">
-        <div>Domingo</div>
-        <div>Segunda</div>
-        <div>Terca</div>
-        <div>Quarta</div>
-        <div>Quinta</div>
-        <div>Sexta</div>
-        <div>Sabado</div>
-      </div>
+      <div id="monthDisplay"></div>
 
       <div id="calendar"></div>
     </div>
@@ -50,8 +40,9 @@
     </div>
 
     <div id="deleteEventModal">
-      <h2>Evento</h2>
+      <h2 id="deleteEventTitle">Evento</h2>
 
+      <p id="deleteEventCategory"></p>
       <p id="eventText"></p>
 
       <button id="deleteButton">Deletar</button>

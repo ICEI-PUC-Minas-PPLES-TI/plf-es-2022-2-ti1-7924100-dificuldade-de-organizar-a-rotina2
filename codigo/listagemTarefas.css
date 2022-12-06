@@ -1,32 +1,34 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-table{
+table {
     width: 1000px;
     border-collapse: collapse;
-    padding: 10px;  
+    padding: 10px;
     margin: auto;
 }
-h1{
+
+h1 {
     text-align: center;
 }
 
-td, th{
+td,
+th {
     border: 1px solid black;
     padding: 20px;
     text-align: center;
 }
 
-thead{
+thead {
     background-color: #0a6fb8;
     color: white;
 }
 
-#filtrosContainer{
+#filtrosContainer {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -40,7 +42,7 @@ thead{
     margin: 5% 0 5% 0;
 }
 
-#btnFiltro{
+#btnFiltro {
     border: none;
     outline: none;
     background: #d0d3d3;
@@ -54,12 +56,13 @@ thead{
     justify-content: center
 }
 
-#botaoFiltroContainer{
+#botaoFiltroContainer {
     display: flex;
     justify-content: center;
     margin: 0 0 20% 0;
 }
-#btnAtualizar{
+
+#btnAtualizar {
     border: none;
     outline: none;
     background: #d0d3d3;
@@ -71,4 +74,37 @@ thead{
     cursor: pointer;
     color: #0a6fb8;
     justify-content: center
+}
+
+.btnHome {
+    background-color: #0a6fb8;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+.btnHome:hover {
+    background-color: RoyalBlue;
+}
+
+.containerBtnHome {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+
+button {
+    width: 75px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px gray;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 15px;
+    color: white;
 }

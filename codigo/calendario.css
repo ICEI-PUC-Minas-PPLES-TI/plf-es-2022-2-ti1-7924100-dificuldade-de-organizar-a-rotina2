@@ -128,14 +128,17 @@ button {
 {
   background-color: #0a6fb8;
     color: white;
-
-    
-    
-
 }
 .cabeca {
   background-color: #0d6efd;
   height: 100px;
-  display: flex;
- 
+  display: flex; 
+}
+
+#monthDisplay{
+  text-align: center;
+  padding: 10px;
+  color: #0a6fb8;
+  font-size: 26px;
+  font-family: sans-serif;
 }

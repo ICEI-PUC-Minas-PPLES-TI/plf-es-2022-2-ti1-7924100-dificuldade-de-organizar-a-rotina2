@@ -7,8 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
     <link rel="stylesheet" href="listagemTarefas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 </head>
 <body>
+    <div class="containerBtnHome">
+        <a href="./calendario.html">
+            <button class="btnHome"><i class="fa fa-home"></i></button>
+        </a>
+    </div>
     <h1 id="tituloListagemTarefas">Lista de Tarefas</h1>
     <div id="filtrosContainer">
         <div id="containerSelectCategorias">
@@ -19,7 +25,7 @@
         <div id= "containerSelectConcluida">
             Conclusão: <select id="selectConcluida">
                 <option value="Todas">Todas</option>
-                <option value="Concluida">Concluida</option>
+                <option value="concluida">Concluida</option>
                 <option value="perdida">Perdida</option>
                 <option value="pendente">Pendente</option>
             </select>

@@ -183,16 +183,43 @@ button
 }
 
 
-}
-
 .box-estatisticas
 {
     position:relative;
     width: 1000px;
-    height: 800px;
+    height: 1000px;
     background: #ffffff;
     border-radius: 8px;
     overflow: hidden;
     display: flex;
     
 }
+
+#spanCategoria{
+    color: #0a6fb8;
+}
+
+#backgroundEstatatisticas{
+    background-color: #dedfdf;
+}
+
+.btnHome {
+    background-color: #0a6fb8; 
+    border: none; 
+    color: white; 
+    padding: 12px 16px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    height: 50px;
+    width: 50px;
+  }
+  
+  .btnHome:hover {
+    background-color: RoyalBlue;
+  }
+
+  .containerBtnHome{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }

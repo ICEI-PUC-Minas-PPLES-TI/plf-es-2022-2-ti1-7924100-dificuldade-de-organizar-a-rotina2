@@ -4,36 +4,41 @@
     <meta charset="UTF-8">
     <title>Cadastro de Categorias</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 </head>
 <body>
+    <div class="containerBtnHome">
+        <a href="./calendario.html">
+            <button class="btnHome"><i class="fa fa-home"></i></button>
+        </a>
+    </div>
     <div id="cadastroTarefaModel" class="box">
         <div class="form">
-            <h2>Cadastro de Taréfas</h2>
+            <h2>Cadastro de Tarefa</h2>
             <div class="inputBox">
                 <input type="text" required="required" id="nomeTarefa">
-                <span>Nome da Taréfa</span>
+                <span>Nome da Tarefa</span>
+                <i></i>
+            </div>
+            <div>
+                <span id="spanCategoria">Categoria</span>
+                <i></i>
+                <div class="select">
+                    <select name="format" id="categoriaTarefa">
+                        <option value="" selected disabled>Escolha um categoria</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inputBox">
                 <i></i>
             </div>
             <div class="inputBox">
-                <input type="Categoria" required="Categoria">
-                <span>Categoria</span>
-                <i></i>
-        <div class="select">
-            <select name="format" id="categoriaTarefa">
-                <option selected disabled>Escolha um categoria</option>
-                <option value="pendente">Pendente</option>
-                <option value="concluida">Concluida</option>
-                <option value="perdida">Perdida</option>
-            </select>
-        </div>
-        </div>
-            <div class="inputBox">
-                <input type="text"  id="dataEntrega" placeholder="dd/mm/yy">
+                <input id="dataTarefa" type="text" id="dataEntrega" placeholder="mm/dd/yyyy (Ex: 1/1/2023)">
                 <span>Data de Entrega</span>
                 <i></i>
             </div>
             <div class="inputBox">
-                    <input type="text" required="required" id="observacoes">
+                    <input type="text" required="required" id="observacoesTarefa">
                     <span>Observações</span>
                     <i></i>
             </div>
