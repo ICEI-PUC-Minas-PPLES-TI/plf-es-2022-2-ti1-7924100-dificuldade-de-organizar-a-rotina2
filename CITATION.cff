@@ -1,31 +1,29 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: 09 - Dificuldade de organização de rotina de estudantes (ROTIM)
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: da Costa Reis Junior
+    given-names: Alberto
+  - family-names: Barcelos Rios Ferreira
+    given-names: Enzo
+  - family-names: Ferraz de Azevedo
+    given-names: Luiz Henrique
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Lara Soares
+    given-names: Felipe Augusto
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Dias Ferreira da Rocha
+    given-names: Roberto Felipe
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Vieira Carneiro
+    given-names: Rommel
 keywords:
-  - 
-  - 
-repository-code: 
+  - procrastinação
+  - produtividade
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2022-2-ti1-7924100-dificuldade-de-organizar-a-rotina2
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2022-07-14
+date-released: 2022-12-14 
